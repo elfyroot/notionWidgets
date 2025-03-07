@@ -3,20 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time-based Greeting</title>
+    <title>Time-Based Greeting</title>
+    
+    <!-- Link to Google Fonts for Libreta -->
+    <link href="https://fonts.googleapis.com/css2?family=Libreta&display=swap" rel="stylesheet">
+
     <style>
+        /* Apply the Libreta font to the entire page */
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
+            font-family: 'Libreta', sans-serif;
+            background-color: #3C2D49; /* Purple background */
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
+        /* Centering the greeting text */
+        .greeting-container {
+            background-color: white;
+            padding: 30px 40px;
+            border-radius: 20px; /* Rounded borders */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+            text-align: center;
+            max-width: 90%;
+            width: 300px;
+        }
+
         h1 {
-            color: #4CAF50;
+            color: #333; /* Dark color for the greeting text */
+            margin: 0;
         }
     </style>
 </head>
 <body>
-    <h1 id="greeting">Loading greeting...</h1>
+    <div class="greeting-container">
+        <h1 id="greeting">Loading greeting...</h1>
+    </div>
 
     <script>
         function getGreeting() {
